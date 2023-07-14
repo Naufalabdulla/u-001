@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class hiragana extends Model
+class alphabet extends Model
 {
     use HasFactory;
 
-    public  function alphabet() {
-        return $this->belongsTo(alphabet::class);
+    public function hiragana(){
+        return $this->hasOne(hiragana::class);
     }
 }

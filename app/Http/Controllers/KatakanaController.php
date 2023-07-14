@@ -2,18 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\hiragana;
+use App\Models\katakana;
 use Illuminate\Http\Request;
 
-class HiraganaController extends Controller
+class KatakanaController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $hiragana = hiragana::all();
-        return view('hiragana', ['hiragana' => $hiragana]);
+        return view('katakana');
     }
 
     /**
@@ -35,7 +34,7 @@ class HiraganaController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(hiragana $hiragana)
+    public function show(katakana $katakana)
     {
         //
     }
@@ -43,7 +42,7 @@ class HiraganaController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(hiragana $hiragana)
+    public function edit(katakana $katakana)
     {
         //
     }
@@ -51,7 +50,7 @@ class HiraganaController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, hiragana $hiragana)
+    public function update(Request $request, katakana $katakana)
     {
         //
     }
@@ -59,7 +58,7 @@ class HiraganaController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(hiragana $hiragana)
+    public function destroy(katakana $katakana)
     {
         //
     }

@@ -1,0 +1,1 @@
+<div>kanji desu</div>
