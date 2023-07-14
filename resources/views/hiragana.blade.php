@@ -3,5 +3,6 @@
       <h1>{{$item->hiragana}}</h1>
       <h1>{{$item->alphabet->letter}}</h1>
       checking
+      its being showed
     </div>
 @endforeach
