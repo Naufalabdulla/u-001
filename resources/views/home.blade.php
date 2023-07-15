@@ -1,7 +1,9 @@
 @extends('layouts.layout')
 @section('title')
 @section('content')
-    @foreach ($collection as $item)
-        @include('option')
-    @endforeach
+    <div class="flex-col">
+        @foreach ($collection as $item)
+            @include('option')
+        @endforeach
+    </div>
 @endsection
