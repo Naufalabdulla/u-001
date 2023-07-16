@@ -12,9 +12,9 @@ class HiraganaController extends Controller
      */
     public function index()
     {
-        $rand = rand(1, 71);
-        $hiragana = hiragana::find($rand);
-        return view('hiragana', ['hiragana' => $hiragana]);
+        $data = hiragana::all()->random(4)->except();
+        $hiragana = $data->random();
+        return view('hiragana', ['hiragana' => $hiragana, 'alphabet' => $data]);
     }
 
     /**
